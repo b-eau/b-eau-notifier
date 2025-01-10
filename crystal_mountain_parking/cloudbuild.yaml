@@ -7,4 +7,7 @@ steps:
   - '-f'
   - 'crystal_mountain_parking/Dockerfile'
   - './crystal_mountain_parking'
+  automapSubstitutions: true
+images:
+- 'gcr.io/beau-local-dev/github.com/b-eau/b-eau-notifier:$COMMIT_SHA'
 logsBucket: 'gs://beau-local-dev-build-logs'
