@@ -1,0 +1,10 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'build'
+  - '-t'
+  - 'gcr.io/beau-local-dev/github.com/b-eau/b-eau-notifier:$COMMIT_SHA'
+  - '-f'
+  - 'crystal_mountain_parking/Dockerfile'
+  - '.'
+logsBucket: 'gs://beau-local-dev-build-logs'
