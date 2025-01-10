@@ -1,0 +1,12 @@
+{
+  "name": "parking-availability-checker",
+  "version": "1.0.0",
+  "description": "Checks parking availability at Crystal Mountain Resort",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}
